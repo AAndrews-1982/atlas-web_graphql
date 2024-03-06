@@ -8,9 +8,9 @@ In this project, you will create an application using a query language, designed
 ## Resources
 #### Read or watch:
 
-#### - GraphQL
+#### GraphQL
 #### - Link: https://graphql.org/
-#### - GraphQL: Schemas and Types
+#### GraphQL: Schemas and Types
 #### - Link: https://graphql.org/learn/schema/
 #### GraphQL: Queries and Mutations
 #### - Link: https://graphql.org/learn/queries/
