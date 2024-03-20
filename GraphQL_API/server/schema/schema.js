@@ -61,3 +61,19 @@ const RootQuery = new graphql.GraphQLObjectType({
     }
   })
 });
+
+const ProjectType = new graphql.GraphQLObjectType({
+  name: 'Project',
+  fields: () => ({
+    id: { type: graphql.GraphQLID },
+    title: { type: graphql.GraphQLString },
+    weight: { type: graphql.GraphQLInt },
+    description: { type: graphql.GraphQLString },
+    tasks: {
+      type: new graphql.GraphQLList(TaskType),
+      resolve(parent, args) {
+        return Task.find({projectId:parent.id});
+      }
+    }
+  })
+});
